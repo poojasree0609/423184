@@ -1,0 +1,97 @@
+Script started on 2025-04-08 11:18:36+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="76" LINES="41"]
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mtar -cvf backup.tar sample_data/[27mtar -cvf backup.tar sample_data/
+[?2004lsample_data/
+sample_data/file1.txt
+sample_data/file2.txt
+sample_data/dir1/
+sample_data/dir1/file3.txt
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mtar -xvf backup.tar[27mtar -xvf backup.tar
+[?2004lsample_data/
+sample_data/file1.txt
+sample_data/file2.txt
+sample_data/dir1/
+sample_data/dir1/file3.txt
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mtar -czvf backup.tar.gz sample_data/[27mtar -czvf backup.tar.gz sample_data/
+[?2004lsample_data/
+sample_data/file1.txt
+sample_data/file2.txt
+sample_data/dir1/
+sample_data/dir1/file3.txt
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mtar -xzvf backup.tar.gz[27mtar -xzvf backup.tar.gz
+[?2004lsample_data/
+sample_data/file1.txt
+sample_data/file2.txt
+sample_data/dir1/
+sample_data/dir1/file3.txt
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mfind sample_data -type f > filelist.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind sample_data -type f > filelist.txt
+[?2004l[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mcat filelist.txt | cpio -ov > backup.cpio[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat filelist.txt | cpio -ov > backup.cpio [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ko
+[?2004lCommand 'cpio' not found, but can be installed with:
+apt install cpio
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mcpio -idv < backup.cpio[27mcpio -idv < backup.cpio
+[?2004lCommand 'cpio' not found, but can be installed with:
+apt install cpio
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7msudo apt update[27msudo apt update
+[?2004l[33m0% [Working][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m                        0% [Working][0m[33m0% [Connected to n348.network-auth.com (209.206.62.111)][0m[33m                                                        0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [44.5 kB]
+[33m0% [1 InRelease 31.6 kB/44.5 kB 71%][0m                                    Err:1 http://archive.ubuntu.com/ubuntu noble InRelease
+  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+[33m                                    0% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease [44.5 kB]
+[33m0% [2 InRelease 15.2 kB/44.5 kB 34%][0m                                    Err:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+[33m                                    0% [Working][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease [44.5 kB]
+[33m0% [3 InRelease 15.2 kB/44.5 kB 34%][0m[33m0% [3 InRelease 31.6 kB/44.5 kB 71%][0m                                    Err:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+[33m                                    0% [Working][0m            Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [44.5 kB]
+[33m0% [4 InRelease 15.2 kB/44.5 kB 34%][0m                                    Err:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+[33m                                    0% [Working][0m            Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 6%Reading package lists... 6%Reading package lists... 34%Reading package lists... 53%Reading package lists... 53%Reading package lists... 68%Reading package lists... 73%Reading package lists... 73%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 78%Reading package lists... 78%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 84%Reading package lists... 84%Reading package lists... 86%Reading package lists... 86%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+[33mN: [0mSee apt-secure(8) manpage for repository creation and user configuration details.[0m
+[33mN: [0mUpdating from such a repository can't be done securely, and is therefore disabled by default.[0m
+[1;31mE: [0mThe repository 'http://archive.ubuntu.com/ubuntu noble InRelease' is no longer signed.[0m
+[1;31mE: [0mFailed to fetch http://archive.ubuntu.com/ubuntu/dists/noble/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)[0m
+[33mN: [0mSee apt-secure(8) manpage for repository creation and user configuration details.[0m
+[33mN: [0mUpdating from such a repository can't be done securely, and is therefore disabled by default.[0m
+[1;31mE: [0mThe repository 'http://archive.ubuntu.com/ubuntu noble-updates InRelease' is no longer signed.[0m
+[1;31mE: [0mFailed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)[0m
+[1;31mE: [0mFailed to fetch http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)[0m
+[1;31mE: [0mThe repository 'http://security.ubuntu.com/ubuntu noble-security InRelease' is no longer signed.[0m
+[33mN: [0mUpdating from such a repository can't be done securely, and is therefore disabled by default.[0m
+[33mN: [0mSee apt-secure(8) manpage for repository creation and user configuration details.[0m
+[1;31mE: [0mFailed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)[0m
+[1;31mE: [0mThe repository 'http://archive.ubuntu.com/ubuntu noble-backports InRelease' is no longer signed.[0m
+[33mN: [0mUpdating from such a repository can't be done securely, and is therefore disabled by default.[0m
+[33mN: [0mSee apt-secure(8) manpage for repository creation and user configuration details.[0m
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7msudo apt install cpio[27msudo apt install cpio
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+Suggested packages:
+  libarchive-dev
+The following NEW packages will be installed:
+  cpio
+0 upgraded, 1 newly installed, 0 to remove and 20 not upgraded.
+Need to get 82.7 kB of archives.
+After this operation, 336 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connected to n348.network-auth.com (209.206.62.111)][0m[33m                                                        0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 cpio amd64 2.15+dfsg-1ubuntu2 [82.7 kB]
+                        Err:1 http://archive.ubuntu.com/ubuntu noble/main amd64 cpio amd64 2.15+dfsg-1ubuntu2
+  File has unexpected size (44513 != 82668). Mirror sync in progress? [IP: 209.206.62.111 443]
+  Hashes of expected file:
+   - SHA512:1811e30aabb98d50ddb05791a71e1420303ff7bffb19f474ca78a2aabc975c480f1474416dce81eb1b48d42eb741810021df52bc853550e229d6b1e1c451085e
+   - SHA256:b3c7bb97baf1a5dabe0c672ebdc94724bdcd7251790152cfa4314efda5696817
+   - SHA1:baa546ff84e9b5e1ccf00ba7a2431c7c167f8c6b [weak]
+   - MD5Sum:dda23cfbce7960b2e3a2308c6061f0f5 [weak]
+   - Filesize:82668 [weak]
+[33m                        0% [Working][0m            [1;31mE: [0mFailed to fetch https://n348.network-auth.com/splash/?mac=AC%3A17%3AC8%3A11%3AB6%3A9E&real_ip=172.50.23.171&client_ip=10.197.46.65&client_mac=3C:21:9C:20:D3:3E&vap=2&a=985d6ac20b189c12b3cad0bd3af82450e25024c8&b=3645866&auth_version=5&key=4f516f5e49dce8b66770127bf71e43d8dec7053e&acl_ver=P7458816V2&continue_url=http%3A%2F%2Farchive.ubuntu.com%2Fubuntu%2Fpool%2Fmain%2Fc%2Fcpio%2Fcpio_2.15%252bdfsg-1ubuntu2_amd64.deb  File has unexpected size (44513 != 82668). Mirror sync in progress? [IP: 209.206.62.111 443]
+   Hashes of expected file:
+    - SHA512:1811e30aabb98d50ddb05791a71e1420303ff7bffb19f474ca78a2aabc975c480f1474416dce81eb1b48d42eb741810021df52bc853550e229d6b1e1c451085e
+    - SHA256:b3c7bb97baf1a5dabe0c672ebdc94724bdcd7251790152cfa4314efda5696817
+    - SHA1:baa546ff84e9b5e1ccf00ba7a2431c7c167f8c6b [weak]
+    - MD5Sum:dda23cfbce7960b2e3a2308c6061f0f5 [weak]
+    - Filesize:82668 [weak][0m
+[1;31mE: [0mUnable to fetch some archives, maybe run apt-get update or try with --fix-missing?[0m
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mcpio -idv < backup.cpio[27mcpio -idv < backup.cpio
+[?2004lCommand 'cpio' not found, but can be installed with:
+apt install cpio
+[?2004h]0;root@POOJASREE: ~/423184/labtask_6root@POOJASREE:~/423184/labtask_6# [7mexit[27mexit
+[?2004lexit
+
+Script done on 2025-04-08 11:25:00+00:00 [COMMAND_EXIT_CODE="127"]
