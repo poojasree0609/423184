@@ -1,0 +1,29 @@
+Script started on 2025-04-08 10:48:53+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="76" LINES="41"]
+[?2004h]0;root@POOJASREE: ~/423184/labtask_3root@POOJASREE:~/423184/labtask_3# [7m./even_odd.sh[27m./even_odd.sh
+[?2004lEnter a number:
+4
+4 is Even
+[?2004h]0;root@POOJASREE: ~/423184/labtask_3root@POOJASREE:~/423184/labtask_3# [7m./leap_year.sh[27m./leap_year.sh
+[?2004lEnter a year:
+2005
+2005 is Not a Leap Year
+[?2004h]0;root@POOJASREE: ~/423184/labtask_3root@POOJASREE:~/423184/labtask_3# [7m./factorial.sh[27m./factorial.sh
+[?2004lEnter a number:
+6
+Factorial of 6 is 720
+[?2004h]0;root@POOJASREE: ~/423184/labtask_3root@POOJASREE:~/423184/labtask_3# [7m./swap.sh[27m./swap.sh
+[?2004lEnter two numbers:
+5,6
+9,0
+Before Swap: a=5,6, b=9,0
+After Swap: a=9,0, b=5,6
+[?2004h]0;root@POOJASREE: ~/423184/labtask_3root@POOJASREE:~/423184/labtask_3# [7m./gcd_lcm.sh[27m./gcd_lcm.sh
+[?2004lEnter two numbers:
+5
+6
+GCD of 5 and 6 is 1
+LCM of 5 and 6 is 30
+[?2004h]0;root@POOJASREE: ~/423184/labtask_3root@POOJASREE:~/423184/labtask_3# [7mexit[27mexit
+[?2004lexit
+
+Script done on 2025-04-08 10:50:11+00:00 [COMMAND_EXIT_CODE="0"]
