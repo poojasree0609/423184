@@ -1,0 +1,16 @@
+Script started on 2025-04-08 11:02:31+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="76" LINES="41"]
+[?2004h]0;root@POOJASREE: ~/423184/labtask_4root@POOJASREE:~/423184/labtask_4# [7mgrep "error" log.txt[27mgrep "error" log.txt
+[?2004lgrep: log.txt: No such file or directory
+[?2004h]0;root@POOJASREE: ~/423184/labtask_4root@POOJASREE:~/423184/labtask_4# cd ..
+[?2004l[?2004h]0;root@POOJASREE: ~/423184root@POOJASREE:~/423184# [7mgrep -o "success" data.txt | wc -l[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -o "success" data.txt | wc -l
+[?2004lgrep: data.txt: No such file or directory
+0
+[?2004h]0;root@POOJASREE: ~/423184root@POOJASREE:~/423184# [7mgrep '^[0-9]' records.txt[27mgrep '^[0-9]' records.txt
+[?2004lgrep: records.txt: No such file or directory
+[?2004h]0;root@POOJASREE: ~/423184root@POOJASREE:~/423184# [7mgrep -v "failed" file.txt[27mgrep -v "failed" file.txt
+[?2004lgrep: file.txt: No such file or directory
+[?2004h]0;root@POOJASREE: ~/423184root@POOJASREE:~/423184# [7mgrep -l "TODO" *.txt[27mgrep -l "TODO" *.txt
+[?2004l[?2004h]0;root@POOJASREE: ~/423184root@POOJASREE:~/423184# [7mexit[27mexit
+[?2004lexit
+
+Script done on 2025-04-08 11:03:38+00:00 [COMMAND_EXIT_CODE="1"]
